@@ -22,7 +22,7 @@ The **'model'** directory is the core of this repository, containing all the nec
 
 Subfolders:
 
-- **data**: Contains the dataset used for training as well as the three datasets used to evaluate the network's performance. It’s essential for users looking to replicate our results or understand how the network performs with different data. The file *training/train_set.npy* contains the fields of the three variables fields stacked a channel dimension (0) mean sea level pressure (1) wind speed at 10m (2) rainfall rate. The mean sea level pressure is normalized according to the historical maximum and minimum ever recorded in the North Atlantic, respectively 1057 hPa and 913 hPa. The wind speed and rainfall rate are normalized by logarithmic normalization. 
+- **data**: Contains the dataset used for training as well as the three datasets used to evaluate the network's performance. It’s essential for users looking to replicate our results or understand how the network performs with different data. The file ***training/train_set.npy*** contains the fields of the three variables fields stacked a channel dimension (0) mean sea level pressure (1) wind speed at 10m (2) rainfall rate. The mean sea level pressure is normalized according to the historical maximum and minimum ever recorded in the North Atlantic, respectively 1057 hPa and 913 hPa. The wind speed and rainfall rate are normalized by logarithmic normalization. 
 - **trained_generator**: This subfolder houses the architecture and weights of the generator used in our study. It allows users to generate new cyclone fields without needing to train the model from scratch, facilitating easy experimentation and further research.
 
 ## Getting Started
@@ -41,13 +41,13 @@ Before running the code, ensure you have the following prerequisites installed:
 1. Clone the repository:
 
 '''
-git clone https://github.com/Carmelo-Belo/PG-GAN_ExtratropicalCyclones
+    git clone https://github.com/Carmelo-Belo/PG-GAN_ExtratropicalCyclones
 '''
 
 2. Install the required dependecies in your conda environment:
 
 '''
-conda install numpy scikit tensorflow
+    conda install numpy scikit tensorflow
 '''
 
 ### Installation
@@ -55,9 +55,9 @@ conda install numpy scikit tensorflow
 
 ### Utilizing the repository
 
-To get started with training the model or generating new samples, navigate to the *'model directory'*. Here, you can run *train_PGGAN.py* to train your model with the provided or your data. Adjusting the hyperparameters within this file will let you experiment with the network's performance and efficiency.
+To get started with training the model or generating new samples, navigate to the **'model directory'**. Here, you can run ***train_PGGAN.py*** to train your model with the provided or your data. Adjusting the hyperparameters within this file will let you experiment with the network's performance and efficiency.
 
-For generating new synthetic cyclone fields, use *generate_sample.py* with the trained generator found in the *trained_generator* subfolder. This allows for immediate generation of new data points, useful for further analysis, comparison, or integration into climate models.
+For generating new synthetic cyclone fields, use ***generate_sample.py*** with the trained generator found in the ***trained_generator*** subfolder. This allows for immediate generation of new data points, useful for further analysis, comparison, or integration into climate models.
 
 ## Citation
 
