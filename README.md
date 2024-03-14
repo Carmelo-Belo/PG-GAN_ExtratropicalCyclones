@@ -40,18 +40,15 @@ Before running the code, ensure you have the following prerequisites installed:
 
 1. Clone the repository:
 
-'''
+'''console
     git clone https://github.com/Carmelo-Belo/PG-GAN_ExtratropicalCyclones
 '''
 
 2. Install the required dependecies in your conda environment:
 
-'''
+'''console
     conda install numpy scikit tensorflow
 '''
-
-### Installation
-
 
 ### Utilizing the repository
 
