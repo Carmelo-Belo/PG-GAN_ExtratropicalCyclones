@@ -23,7 +23,7 @@ The **'model'** directory is the core of this repository, containing all the nec
 Subfolders:
 
 - **data**: Contains the dataset used for training as well as the three datasets used to evaluate the network's performance. It’s essential for users looking to replicate our results or understand how the network performs with different data. The file ***training/train_set.npy*** contains the fields of the three variables fields stacked a channel dimension (0) mean sea level pressure (1) wind speed at 10m (2) rainfall rate. The mean sea level pressure is normalized according to the historical maximum and minimum ever recorded in the North Atlantic, respectively 1057 hPa and 913 hPa. The wind speed and rainfall rate are normalized by logarithmic normalization. 
-This folder contains large data files (> 5GB), it is available on zenodo at the following (zenodo link). 
+This folder contains large data files (> 5GB), it is available on zenodo [![DOI](https://zenodo.org/badge/772076128.svg)](https://zenodo.org/doi/10.5281/zenodo.10818906)
 - **trained_generator**: This subfolder houses the architecture and weights of the generator used in our study. It allows users to generate new cyclone fields without needing to train the model from scratch, facilitating easy experimentation and further research.
 
 ## Getting Started
